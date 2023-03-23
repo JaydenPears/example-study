@@ -11,6 +11,11 @@ const MainPage = () => {
         const data = resp.data;
         setText(data.text)
     });
+
+    axios.post('http://127.0.0.1:5000/', {
+        firstName: 'Fred',
+        lastName: 'Flintstone'})
+    
     useTitle(TITLE);
     return (
         <div>
